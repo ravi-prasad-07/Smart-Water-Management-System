@@ -247,6 +247,7 @@ void bill(int f) {
     printf("Month: %d, Year: %d, Consumption: %d, Bill: %.2f\n", user[f].bhis[i].month, user[f].bhis[i].year, user[f].bhis[i].consume, user[f].bhis[i].bill);
 
     bill_index[f]++;
+    saveUsersToFile();
 }
 
 void history(int f) {
